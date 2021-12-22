@@ -1,0 +1,324 @@
+.client-services {
+  box-shadow: unset;
+  margin: 0;
+  padding: 0;
+  & table thead tr {
+    font-size: 14px;
+    &:nth-child(2) {
+      font-size: 14px;
+    }
+  }
+  & table tbody tr td {
+    padding: 4px;
+    font-size: 14px;
+  }
+}
+.client-login-form {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: unset !important;
+  & h2 {
+    margin-top: 0 !important;
+  }
+  & form h3 {
+    margin: 0;
+    margin-top: 5px;
+  }
+  & .form-head-links {
+    margin: 5px 0 !important;
+  }
+  & .form-width.form-submit {
+    margin-top: 0 !important;
+  }
+}
+@media (max-width: 992px) {
+  .client-services table thead tr {
+    font-size: 12px;
+    &:nth-child(2) {
+      font-size: 12px;
+    }
+  }
+  .client-services table tbody tr td {
+    font-size: 12px;
+  }
+}
+.client-view {
+  & .client-main {
+    background-color: white;
+    width: 100%;
+    padding: 5px 10px;
+    box-shadow: 0 0 12px 1px #00000029;
+    border-radius: 7px;
+    margin-left: 10px;
+    padding: 10px;
+    & .balance-details {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      & button {
+        width: 100%;
+        height: 34px;
+        background: #e98104;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-top: 14px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: 200ms;
+        & i {
+          color: white;
+        }
+        &:hover {
+          background-color: #ffa130;
+        }
+      }
+      & .stars-info {
+        font-size: 11px;
+        color: #fe8b01;
+      }
+      & i {
+        color: #635f5f;
+        &.open {
+          color: #ff8b00;
+        }
+      }
+      & span {
+        display: block;
+      }
+      & .bal-msg-desc {
+        font-size: 14px;
+        margin: 8px 0px;
+        color: black;
+      }
+      & .bal-msg {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 8px 0px;
+        color: black;
+      }
+      & .bal {
+        font-size: 20px;
+        padding: 20px;
+        font-weight: bold;
+        color: #fe8b01;
+        width: 260px;
+        & small {
+          font: 14px;
+        }
+      }
+    }
+  }
+}
+.client-view {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  padding: 10px;
+  & .client-side {
+    & .favo-btn {
+      background: dodgerblue !important;
+    }
+    & .favo {
+      max-height: 260px;
+      overflow-y: scroll;
+      & span {
+        display: block;
+        padding: 5px;
+        margin: 3px 0;
+        background: #e7f7ff;
+        transition: 200ms;
+        cursor: pointer;
+        &:hover {
+          background: #cae3f0;
+        }
+        /* border-radius: 0px; */
+      }
+    }
+    & section {
+      padding: 20px 0;
+      height: 6px;
+      overflow: hidden;
+      transition: 200ms;
+      &.open {
+        transition: 200ms;
+        animation: open_sec 200ms ease-in 1;
+        animation-fill-mode: forwards;
+        // height: auto;
+        @keyframes open_sec {
+          0% {
+            height: 6px;
+          }
+          100% {
+            height: 250px;
+          }
+        }
+      }
+    }
+    & section:nth-child(1) {
+      height: auto;
+      overflow: unset;
+    }
+    width: 30%;
+    margin-right: 10px;
+    background: white;
+    box-shadow: 0 0 12px 1px #00000029;
+    border-radius: 7px;
+    padding: 5px 10px;
+
+    & table tr td {
+      //   display: block;
+      font-size: 14px;
+      font-weight: bold;
+      color: #555252;
+      margin-top: 4px;
+      &:nth-child(2) {
+        padding-left: 5px;
+      }
+    }
+    & button {
+      width: 100%;
+      height: 34px;
+      background: #e98104;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 14px;
+      cursor: pointer;
+      transition: 200ms;
+      &:hover {
+        background-color: #ffa130;
+      }
+    }
+    & .drop-low {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      color: #646566;
+      transition: 200ms;
+      & h3 {
+        margin: 3px;
+        display: inline;
+        font-size: 16px;
+      }
+      & i {
+        font-size: 16px;
+        margin-right: 14px;
+        transition: 200ms;
+        &#open {
+          transform: rotate(-180deg);
+        }
+      }
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
+section.user-info {
+  & button {
+    width: 100%;
+    height: 34px;
+    background: #e98104;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 14px;
+    cursor: pointer;
+    transition: 200ms;
+    &:hover {
+      background-color: #ffa130;
+    }
+  }
+  padding-top: 0;
+  & .profile {
+    padding-bottom: 4px;
+    text-align: center;
+    & span {
+      display: block;
+      font-size: 14px;
+      margin-top: 3px;
+      font-weight: bold;
+    }
+    & .stars-info {
+      font-size: 11px;
+      color: #fe8b01;
+    }
+    & i {
+      color: #635f5f;
+      &.open {
+        color: #ff8b00;
+      }
+    }
+  }
+  & .image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 5px;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  & span {
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  .client-view {
+    flex-direction: column;
+    align-items: center;
+  }
+  .client-view .client-side {
+    width: 96%;
+    margin: 10px auto;
+  }
+
+  .client-view .client-side section.user-info .image {
+    width: 200px;
+    height: 200px;
+  }
+  .client-view .client-side section.user-info .profile span {
+    font-size: 22px;
+  }
+  .client-view .client-side section.user-info .profile .stars-info {
+    font-size: 14px;
+  }
+  .client-view .client-side h3 {
+    font-size: 22px;
+    margin-left: 20%;
+  }
+  .client-view .client-side table tr td {
+    font-size: 20px;
+  }
+  .client-view .client-side table tr td:nth-child(2) {
+    padding-left: 44px;
+    margin-left: 231px;
+  }
+  .client-view .client-side table {
+    margin: auto;
+  }
+  .client-view .client-side button {
+    width: 296px;
+    display: block;
+    margin: auto;
+    margin-top: 14px;
+  }
+  .client-view .client-main {
+    width: 96%;
+    margin: 0;
+  }
+}
+@media (max-width: 525px) {
+  .client-view .client-side h3 {
+    font-size: 22px;
+    margin-left: 10%;
+  }
+}

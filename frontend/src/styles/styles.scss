@@ -1,0 +1,60 @@
+$primary-color: #03a9f4;
+$primary-color-text: #cacaca;
+$primary-color-hover: #919191;
+$xpath-color: #effaff;
+$nav-bg-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.164);
+$nav-logo-h1: black;
+$nav-ul-a: #03a9f4;
+$nav-ul-a-brdrs: #03a9f4;
+$dark-color-light-bg: #d6f2ff;
+$icon-htext-clrs: #03a9f4;
+@mixin ul-a-hvr {
+  color: #fff !important;
+  background: #33bbfb;
+  border-color: #91d9fb;
+}
+@mixin ul-a {
+  border: 3px solid #c3d8ff82;
+  background: #d6f2ff;
+  color: #03a9f4 !important;
+}
+$content-bg-color: #ffffff;
+$primary-hover: #484848;
+$heights-card-bg-color: #313646;
+$secondary-bg-color: #282c38;
+$form-counter-block-color: #707070;
+$form-input-border-color: #353535;
+$form-input-color: #6f6f6f;
+$form-text-color: #514e4e;
+$form-button-text-color: #7a7a7a;
+$primary-fonts: "sf-text";
+$modal-heading-color: #ff566f;
+$top-view-text-color: #226685;
+// table colors
+$table-text-color: #6f6f6f;
+$table-td-bg: #e7f7ff;
+$table-td-bg-hover: #d9ecf5;
+$LinkButton-hover: #050505;
+// messages
+$success: #0090b9;
+$alert: #ff5f4f;
+$error: #cf1300;
+// placeorder page
+$place-sidebar-bg: #eae9f6;
+$place-text-color: #5b5b5b;
+
+@mixin form-input-focus {
+  border-color: #ff9c77;
+  box-shadow: 0 0 0 3px #fc5d4e40;
+}
+
+@mixin LinkButton {
+  padding: 10px 15px;
+  background-color: $primary-color;
+  color: $primary-color-text;
+  margin: 10px 15px;
+  font-size: 14px;
+}
+@mixin shadows {
+  box-shadow: 0 0 12px 1px #0000003d;
+}

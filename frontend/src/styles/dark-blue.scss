@@ -1,0 +1,26 @@
+header {
+  background: linear-gradient(314deg, #0e0655, #0f0948, #0d093a, #0d093a);
+}
+nav .nav-view ul li a {
+  color: #8888f7;
+  border-color: #1a1a7b;
+}
+.user-logged {
+  background: #0f0948 !important;
+  color: #8888f7 !important;
+  border-color: #1a1a7b !important;
+}
+nav .nav-view .nav-menu-btn svg {
+  background: #0f0948 !important;
+  color: #8888f7 !important;
+  border-color: #1a1a7b !important;
+}
+nav .nav-view ul li a:hover,
+nav .nav-view .nav-menu-btn svg:hover {
+  color: #a59fe5 !important;
+  background: #483ea3 !important;
+}
+
+// nav .nav-view ul li.user-btn svg:hover{
+//     ;
+// }

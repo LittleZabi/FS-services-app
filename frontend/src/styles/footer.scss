@@ -1,0 +1,26 @@
+footer {
+  background: #fefeff;
+  padding: 18px;
+  box-shadow: 0 0 12px 1px #00000029;
+  & .page-view {
+    width: 95%;
+    color: #7688c3;
+    text-align: center;
+
+    & a {
+         color: #ff003d;
+    font-weight: bold;
+    }
+    & span:nth-child(3) {
+      display: block;
+    }
+  }
+}
+@media (max-width: 1280px) {
+  footer .page-view {
+    width: 80%;
+    & span {
+      font-size: 14px;
+    }
+  }
+}
